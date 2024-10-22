@@ -1,0 +1,10 @@
+services:
+  app:
+    container_name: app
+    entrypoint: ["bash", "/app/run_app.sh"]
+    build:
+      context: .
+    ports:
+      - 8000:8000
+    env_file:
+      - "secrets/.env.prod"
