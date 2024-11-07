@@ -1,7 +1,7 @@
 from fastapi import FastAPI
 
-from src.settings import Settings
 from src.app import get_router as get_app_router
+from src.settings import Settings
 
 
 def _include_routers(app: FastAPI, settings: Settings) -> None:

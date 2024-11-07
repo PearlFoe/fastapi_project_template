@@ -1,6 +1,7 @@
 from fastapi import APIRouter
 
 from src.settings import Settings
+
 from .containers import AppContainer
 from .routers import router
 
